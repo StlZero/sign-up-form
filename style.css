@@ -12,13 +12,14 @@ body {
 
 .logo-sect {
     background-image: url(background.jpg);
-    width: 40%;
+    width: 40vw;
+    height: 100vh;
 }
 
 .form-sect {
     background-color: #f2f4f4;
     /* background-size:  ; */
-    width: 60%;
+    width: 60vw;
 
     display: flex;
     flex-direction: column;
@@ -27,8 +28,8 @@ body {
 .form-header > p,
 .form-header > div {
     margin-top: 50px;
+    padding-right: 200px;
 }
-
 
 .form-header,
 .form-body {
@@ -39,8 +40,43 @@ body {
 
 .form-body {
     background-color: #fdfefe;
-    margin-top: 50px;
+    margin-top: 25px;
 }
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 70px 20px 0px;
+}
+
+form div label {
+    width: 200px;
+}
+
+form div input {
+    width: 300px;
+}
+
+.form-submit {
+    background-color: #f2f4f4;
+}
+
+.form-submit > div {
+    padding: 35px;
+    margin-top: 10px;
+}
+
+.form-submit > p {
+    padding-left: 35px;
+}
+
+
 
 /* .form-header p,
 .form-header em {
