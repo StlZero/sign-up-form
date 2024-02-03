@@ -1,10 +1,17 @@
 * {
     margin: 0;
     padding: 0;
-    border-style: border-box;
+    box-sizing: border-box;
 
-    font-size: 24px;
+    /* font-size: 24px; */
 }
+
+
+/* SECT1&3: #f2f4f4 */
+/* SECT2: #fdfefe */
+/* Blue: #2e86c1 */
+
+/* OUTLINE: NONE */
 
 body {
     display: flex;
@@ -18,67 +25,71 @@ body {
 
 .form-sect {
     background-color: #f2f4f4;
-    /* background-size:  ; */
     width: 60vw;
+    height: 100vh;
 
     display: flex;
     flex-direction: column;
 }
 
-.form-header > p,
-.form-header > div {
-    margin-top: 50px;
-    padding-right: 200px;
+.header {
+    background-color: #f2f4f4;
+    height: 32.5vh;
+
+    font-size: 2rem;
+    padding: 50px;
+
 }
 
-.form-header,
-.form-body {
-    padding: 35px;
-}
-
-
-
-.form-body {
-    background-color: #fdfefe;
+.header > div,
+.header > p {
     margin-top: 25px;
 }
 
-form {
+.main {
+    background-color: #fdfefe;
+    height: 37.5vh;
+
+    padding: 20px 50px 20px 50px;
+    font-size: 1rem;
+}
+
+#form {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
-form div {
+#form > div {
+    margin: 25px 115px 0px 0px;
+
     display: flex;
     flex-direction: column;
-    padding: 20px 70px 20px 0px;
 }
 
-form div label {
+#form > div label {
     width: 200px;
 }
 
-form div input {
-    width: 300px;
+#form > div input {
+    width: 250px;
+    height: 30px;
+
+    border-radius: 4px;
 }
 
-.form-submit {
+.footer {
     background-color: #f2f4f4;
+    height: 30vh;
+
+    padding: 30px 50px 20px 50px;
+    font-size: 1.5rem
 }
 
-.form-submit > div {
-    padding: 35px;
-    margin-top: 10px;
+#submit-button {
+    width: 225px;
+    height: 50px;
+
+    margin-bottom: 30px;
+    font-size: 1rem;
+    border-radius: 10px;
 }
-
-.form-submit > p {
-    padding-left: 35px;
-}
-
-
-
-/* .form-header p,
-.form-header em {
-    font-size: 24px;
-} */

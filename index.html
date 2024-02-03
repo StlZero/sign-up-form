@@ -13,7 +13,7 @@
     </div>
 
     <div class="form-sect">
-        <div class="form-header">
+        <div class="header">
             <div>
                 <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
                 <p>Sign up <em>now</em> to get started.</p>
@@ -21,42 +21,42 @@
             <p>You <em>know</em> you want to</p>
         </div>
 
-        <div class="form-body">
+        <div class="main">
             <h1>Let's do this!</h1>
 
-            <form id="main-form">
+            <form id="form">
                 <div>
-                    <label for="first-name">First Name: </label>
-                    <input type="text" id="first-name" name="first-name" />
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" name="first-name" required/>
                 </div>
                 <div>
-                    <label for="last-name">Last Name: </label>
-                    <input type="text" id="last-name" name="last-name" />
-                </div>
-
-                <div>
-                    <label for="email">Email: </label>
-                    <input type="email" id="email" name="email" />
-                </div>
-                <div>
-                    <label for="tel-number">Phone number: </label>
-                    <input type="tel" id="tel-number" name="tel-number" />
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" name="last-name" required/>
                 </div>
 
                 <div>
-                    <label for="pwd">Password: </label>
-                    <input type="password" id="pwd" name="pwd"/>
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email" required/>
                 </div>
                 <div>
-                    <label for="conf-pwd">Confirm password: </label>
-                    <input type="password" id="conf-pwd" name="conf-pwd">
+                    <label for="tel-number">PHONE NUMBER</label>
+                    <input type="tel" id="tel-number" name="tel-number" required/>
+                </div>
+
+                <div>
+                    <label for="pwd">PASSWORD</label>
+                    <input type="password" id="pwd" name="pwd" required/>
+                </div>
+                <div>
+                    <label for="conf-pwd">CONFIRM PASSWORD</label>
+                    <input type="password" id="conf-pwd" name="conf-pwd" required>
                 </div>
             </form>
         </div>
 
-        <div class="form-submit">
+        <div class="footer">
             <div>
-                <button type="submit" form="main-form">Create Account</button>
+                <button type="submit" form="form" id="submit-button">Create Account</button>
             </div>
 
             <p>Aleady have an account? <a href="#">Log in</a></p>
@@ -68,3 +68,4 @@
     </div>
 </body>
 </html>
+<script type="text/javascript" src="script.js"></script>
